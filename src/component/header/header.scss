@@ -1,0 +1,154 @@
+.metamask-btn {
+    border: 1px rgb(66, 206, 66) solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+    background-color: #0f0f0f;
+    z-index: 100;
+    padding: 12px 0;
+    border-bottom: 1px grey solid;
+
+
+    .title {
+        padding: 16px;
+        color: #d3b16e;
+    }
+
+    .badge {
+        background-color: #333023;
+        color: #d3b16e;
+        border-radius: 10px;
+        padding: 2px 10px;
+        margin-left: 20px;
+    }
+
+    ul li {
+        padding: 0 10px;
+        cursor: pointer;
+    }
+
+    ul li:hover {
+        color: #FCBF07;
+    }
+
+    ul {
+        margin-bottom: 0;
+        padding: 0px;
+    }
+
+    .hamburger-icon-container {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        width: 25px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .hamburger-icon-container:hover {
+        color: #FCBF07;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .hamburger-bg {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 998;
+        background: #181818;
+        opacity: 0.6;
+        display: block !important;
+    }
+
+    .hamburger-box {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: #181818;
+        z-index: 999;
+        flex-direction: column;
+        padding: 20px;
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    .hamburger-box ul li {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .hamburger-box ul li:hover {
+        box-shadow: 0px 0px 10px #FCBF07;
+        border-radius: 5px;
+    }
+
+    .hamburger-cancel-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hamburger-cancel-container .hamburger-cancel-btn:hover {
+        color: #5D5FEF;
+        cursor: pointer;
+    }
+
+    @media (max-width:991px) {
+        .hamburger-icon-container {
+            display: flex;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        .row-reverse-991 {
+            flex-flow: row-reverse;
+        }
+
+        .hamburger-icon {
+            display: inline;
+        }
+
+        .hamburger-box {
+            right: 65%;
+        }
+
+        .hamburger-box .hamburger {
+            display: inline !important;
+        }
+    }
+
+    @media (max-width:576px) {
+        .hamburger-icon-container {
+            display: flex;
+        }
+
+        .hamburger-box {
+            right: 0;
+        }
+
+        .hamburger-box .hamburger {
+            display: inline !important;
+        }
+
+        .mobile-just-start {
+            justify-content: start;
+        }
+
+    }
+
+}

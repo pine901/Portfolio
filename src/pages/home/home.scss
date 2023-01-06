@@ -1,0 +1,228 @@
+.request-section {  
+    background-image: url(../../../public/home_back.jpg);
+
+    .smart {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        border: 0px solid ;
+        transform: rotate(-9.28deg);
+    }
+
+    .security-card {
+        img {
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+}
+
+.security-section {
+    background: #0F0F0F;
+}
+
+.methodology-section {
+    background: #0F0F0F;
+}
+
+.request-btn-section {
+    background: #181818;
+    overflow: hidden;
+
+    .audit-btn-shadow {
+        box-shadow: 0px 0px 1000px 10px #FBBF04;
+    }
+}
+
+.feature-section {
+    background: #0F0F0F;
+
+    .feature-card {
+        img {
+            margin: auto;
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    .flash-ecosystem {
+        background: url('../../assets/ecosystem.png');
+        border: 2px solid rgba(251, 191, 4, 0.03);
+        border-radius: 25px;
+        padding: 40px 0px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        @media (max-width:576px) {
+            padding: 10px 0px;
+            background-size: 130% 100%;
+        }
+    }
+
+    .cert-cap {
+        position: absolute;
+        left: -17%;
+        top: -17%;
+    }
+
+    @media (max-width:576px) {
+        text-align: center;
+
+        .row-reverse {
+            flex-direction: column-reverse;
+            gap: 80px;
+        }
+    }
+
+    .row-reverse {}
+}
+
+.faq-section {
+    background: #0F0F0F;
+
+    /*  */
+    .faq {
+        width: 100%;
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .faq .menu {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        list-style: none;
+        width: 100%;
+    }
+
+    .faq .menu>li>a {
+
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .faq .menu>ul {
+        list-style-type: disclosure-closed;
+    }
+
+    .faq .menu ul {
+        height: 0;
+        opacity: 0;
+        transition: all .5s ease;
+        top: 35px;
+        width: 100%;
+        list-style: none;
+    }
+
+    .content-visable {
+        height: 130px !important;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    @media (max-width:576px) {
+        .content-visable {
+            height: 230px !important;
+        }
+    }
+
+    .faq .menu ul a {
+        color: #000;
+        display: block;
+        padding: 5px 20px;
+    }
+
+    .faq-title {
+        background: #212121;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .faq-content {
+        text-align: left;
+        padding: 5px 15px;
+    }
+
+
+}
+
+.request-setting-modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0px);
+    animation: 0.3s ease-in-out 0s 1 normal forwards running opacity-animation;
+    overflow-y: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    z-index: 99999999999;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #787878 #b82828;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #0F0F0F;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #464545;
+    border-radius: 10px;
+}
+
+.request-setting-modal-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+}
+
+.request-setting-modal-body {
+    max-width: 700px;
+    margin: auto;
+    width: 100%;
+    background: #141414;
+    z-index: 9999;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.request-modal-header {
+    background: #181818;
+}
+
+.modal-content {
+    overflow: auto;
+    height: 100%;
+    max-height: 700px;
+}

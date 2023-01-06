@@ -1,0 +1,44 @@
+footer {
+    width: 100%;
+    background: #0F0F0F;
+
+    div a {
+        display: block;
+        cursor: pointer;
+        // padding: 0 20px;
+
+        &:hover {
+            // background-color: #eee;
+            color: #FBBF04;
+        }
+    }
+
+    h6 {
+        &:hover {
+            cursor: pointer;
+            color: #FBBF04;
+        }
+    }
+
+    p {
+        color: #85898F;
+        margin: 0 !important;
+        font-size: 14px;
+        // margin-top: 20px;
+    }
+
+    h6 {
+        color: #85898F;
+    }
+
+    .submit-btn {
+        border-radius: 50px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #FBBF04;
+        color: black;
+    }
+
+    @media (max-width:576px) {}
+}
